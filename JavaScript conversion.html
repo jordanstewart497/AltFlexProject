@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python</title>
+</head>
+
+<style>
+    body {
+        background-color: #494949;
+
+
+    }
+    table{
+        border-bottom-color: #f99d1c;border-left-color: #f99d1c;border-right-color: #f99d1c;
+        border-top-color: #f99d1c;
+    }
+    header{
+        color: #FFFFFF;
+        font-family: Arial;
+        font-size: 60px;
+
+    }
+
+</style>
+
+<body>
+
+
+<center>
+    <header>WEST-MEC CALCULATOR</header>
+    <Form name="Calc">
+
+        <table border= 30 >
+            <tr>
+                <td>
+                    <center>
+                        <input type="text"   name="Input" Size="24">
+                    </center>
+                    <br>
+                </td>
+
+            <tr>
+                <td><input style="background-color: #f99d1c;" type="button" name="one" value="  1  " OnClick="Calc.Input.value += '1'">
+                    <input style="background-color: #f99d1c;" type="button" name="two" value="  2  " OnCLick="Calc.Input.value += '2'">
+                    <input style="background-color: #f99d1c;" type="button" name="three" value="  3  " OnClick="Calc.Input.value += '3'">
+                    <input style="background-color: #ffffff;" type="button" name="plus" value="  +  " OnClick="Calc.Input.value += ' + '">
+                    <br>
+                    <input style="background-color: #f99d1c;" type="button" name="four"  value="  4  " OnClick="Calc.Input.value += '4'">
+                    <input style="background-color: #f99d1c;" type="button" name="five"  value="  5  " OnCLick="Calc.Input.value += '5'">
+                    <input style="background-color: #f99d1c;" type="button" name="six"   value="  6  " OnClick="Calc.Input.value += '6'">
+                    <input style="background-color: #ffffff;" type="button" name="minus" value="  -  " OnClick="Calc.Input.value += ' - '">
+                    <br>
+                    <input style="background-color: #f99d1c;" type="button" name="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+                    <input style="background-color: #f99d1c;" type="button" name="eight" value="  8  " OnCLick="Calc.Input.value += '8'">
+                    <input style="background-color: #f99d1c;" type="button" name="nine"  value="  9  " OnClick="Calc.Input.value += '9'">
+                    <input style="background-color: #ffffff;" type="button" name="times" value="  x  " OnClick="Calc.Input.value += ' * '">
+                    <br>
+                    <input style="background-color: #f99d1c;" type="button" name="clear" value="  c  " OnClick="Calc.Input.value = ''">
+                    <input style="background-color: #f99d1c;" type="button" name="zero"  value="  0  " OnClick="Calc.Input.value += '0'">
+                    <input style="background-color: #f99d1c;" type="button" name="DoIt" value="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+                    <input style="background-color: #ffffff;" type="button" name="div"   value="  /  " OnClick="Calc.Input.value += ' / '">
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </Form>
+</center>
+
+
+
+<script aria-hidden="true">
+
+    /*
+
+     var SIZE = 100;         //size of array
+     var index;              //loop index
+     var searchValue;        //value sought
+     var found = false;      //found flag
+     var ES = "";
+     var BR = "<br>"
+
+     //creates an empty pre-sized array
+     var squaresArray = new Array (SIZE);
+
+     //populate the array with squares
+     //of each index value
+
+     for (index = 0; index < SIZE; index++) {
+     squaresArray[index] = index * index;
+
+     }
+
+
+     //User will enter a value to check
+     searchValue = prompt (" Enter an integer < 250000", ES);
+     searchValue= parseInt(searchValue);
+     //Perform a sequential search,
+     //looking for searchValue in squaresArray
+
+     index = 0;
+     found = false;
+     while (index <SIZE && !found && squaresArray [index] <searchValue) {
+     //1. index smaller than the length of array
+     //2. found is false
+     //3. the current array value < search value
+     document.write(squaresArray[index] + BR);
+     if (squaresArray[index] == searchValue) {
+     found = true;
+     document.write("Perfect Square!");
+     }
+     //increment counter
+     index++;
+     }
+
+     */
+
+
+
+    function randomNumber(max,min){
+
+        return Math.random() * (max - min + 1) + min;
+
+    }
+
+
+    function addition(n1, n2){
+        return n1 + n2;}
+
+    function multiplication(n1, n2) {
+        return n1 * n2;
+    }
+
+    function subtraction(n1, n2){
+        return n1 - n2;
+    }
+
+
+    function division(n1, n2){
+        return n1 / n2;
+    }
+
+
+
+    function modulus(n1, n2) {
+        return n1 % n2;
+    }
+
+    //Generate two random numbers:
+
+
+    //since random returns [0.0, 1.0), use ceil to prevent 0
+    /*
+     num1 = randomNumber(100,0);
+
+     num2 = randomNumber(100,0);
+
+     sm = addition(num1, num2);
+
+     prod = multiplication(num1, num2);
+
+     dif = subtraction(num1, num2);
+
+     quotient = division(num1, num2);
+
+     mod = modulus(num1, num2);
+
+     document.write("Value A:\t" + (num1) + "<br>");
+
+     document.write("Value B:\t" + (num2) + "<br>");
+
+     document.write("The sum of the two numbers is: " + (sm));
+
+     document.write("The product of the two numbers is: " + (prod));
+     document.write("The different of the two numbers is: " + (dif));
+
+     document.write("The quotient of the two numbers is: " + (quotient));
+
+     document.write("The modulus of the two numbers is: " + (mod));*/
+
+</script>
+
+</body>
+</html>
